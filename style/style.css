@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+:root {
+  --cor-primaria: #0c134f;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #7e3aff;
+  --fonte-primaria: "Space Grotesk", sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria);
+
+}
+
+button {
+  border-radius: 10px;
+  border: 3px solid var(--cor-terciaria);
+  color: white;
+  background: var(--cor-primaria);
+  cursor: pointer;
+  transition: 0.3s;
+  width: 20%;
+  font: inherit;
+  padding: 10px;
+  font-weight: 700;
+
+  display: flex;  
+align-items: center;
+
+  text-align: center;
+
+
+  justify-content: center;
+
+
+
+
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: var(--cor-terciaria);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+/*PAI header*/
+
+.navegacao {
+  display: flex;
+  padding: 43px 150px 0px 700px;
+  justify-content: flex-end;
+  gap: 50px;
+  font-family: var(--fonte-primaria);
+  font-size: 23px;
+
+}
+
+.nav {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: var(--cor-secundaria);
+
+}
+
+/*PAI section: apresentacao*/
+
+#apresentacao {
+  padding: 80px 230px;
+  font-size: 20px;
+  font-family: var(--fonte-primaria);
+  display: flex;
+  gap: 80px;
+}
+
+.bemvindo {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.botoesinicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.botoesinicio > a{
+  display: flex;  
+  border: 2px solid var(--cor-terciaria);
+
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: var(--cor-secundaria); 
+  font: inherit;
+  padding: 10px;
+  font-weight: 700;  
+}
+
+
+.imgpequenas{
+  padding-left: 5px;
+  height: 30px;
+}
+
+
+
+/*PAI section: sobremim*/
+
+.cartaosobremim {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  margin: 0% 12%;
+  padding: 50px 70px 30px 70px;
+  font-size: 20px;
+  font-family: var(--fonte-primaria);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.botoesredes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+
+/*PAI id: projeto*/
+
+.projetostitulo{
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+.amostra{
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  overflow-y: scroll
+
+}
+
+.projeto1, .projeto2, .projeto3, .projeto4, .projeto5, .projeto6, .projeto7, .projeto8, .projeto9 {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+
+  padding: 200px 100px;
+  font-size: 20px;
+  font-family: var(--fonte-primaria);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+
+
+/*PAI id: contato*/
+
+#formulario{
+  margin: 50px 70px 50px 70px;
+  padding: 50px 70px 30px 70px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entreemcontato{
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+input,
+textarea {
+  display: block;
+}
+
+input,
+textarea{
+  width: 50%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: var(--cor-primaria);
+  background: var(--cor-secundaria);
+  border: 3px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: var(--cor-terciaria);
+
+}
+
+
+textarea {
+  min-height: 300px;
+  resize: vertical;
+}
+
+
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
+
+
+.rodape{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--cor-terciaria);
+}
