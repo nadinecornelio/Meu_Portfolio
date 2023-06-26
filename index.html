@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="javascript.js"></script>
+  </head>
+
+  <!--CORPO INTEIRO-->
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <nav class="navegacao">
+        <a class="nav" href="index.html">HOME</a>
+        <a class="nav" href="#sobremim">SOBRE MIM</a>
+        <a class="nav" href="#projetos">PROJETOS</a>
+        <a class="nav" href="#contato">CONTATO</a>
+      </nav>
+    </header>
+
+    <!--BOAS VINDAS-->
+    <section id="apresentacao">
+      <div class="bemvindo">
+        <h2>Olá! Bem-vindo(a) ao meu portifólio!</h2>
+        <p>
+          Meu nome é Nadine Cornelio, e sou estudante de Ciências da Computação
+          na UPF. Estou muito animada em compartilhar com você uma visão geral
+          dos meus projetos e das minhas conquistas.
+        </p>
+        <div class="botoesinicio"> 
+                   
+            <button href="https://1drv.ms/b/s!AjgZyqz7x6gAg_Je4_U-cSGcHSC8Tw?e=IhFk46">
+              Currículo<img src="./assets/baixar.png" class="imgpequenas" />
+            </button>
+            <button href="https://www.linkedin.com/in/nadine-cornelio/">
+              Sobre Mim<img src="./assets/info.png" class="imgpequenas" />
+            </button>          
+        </div>
+      </div>
+      <div class="foto">
+        <img class="avatar"
+          src="./assets/foto.png"
+          alt="Foto do meu avatar em pixels"
+          onmouseover="this.src= './assets/foto1.png'"
+          onmouseout="this.src= './assets/foto.png'"
+        />
+      </div>
+    </section>
+
+    <!--SOBRE MIM-->
+    <section id="sobremim">
+      <div class="cartaosobremim">
+      <h2>Sobre Mim</h2>
+      <p>
+        Meu nome completo é Nadine Weimann Cornelio e sou estudante do curso de
+        Ciências da Computação apaixonada pelo mundo do desenvolvimento
+        Front-End e pela criação de interfaces criativas e inovadoras.
+        Atualmente, estou em busca de conhecimento e experiência nessa área em
+        constante evolução. Ao longo de minha jornada acadêmica na Universidade
+        de Passo Fundo (UPF) e no meu atual cargo como Desenvolvedora Web na EVO
+        Automações, adquiri muito conhecimento em HTML, CSS, JavaScript e React.
+        Essas habilidades têm me permitido criar e desenvolver projetos web,
+        além de fornecer uma base sólida para minha especialização futura em
+        UI/UX.
+      </p>
+      <div class="botoesredes">
+          <h3 class="minhasredes">Acesse minhas redes</h3>
+          <div class="links">
+            <a class="icones" href="https://github.com/nadinecornelio">
+              <img src="./assets/github.png" />
+            </a>
+            <a
+              class="icones"
+              href="https://www.linkedin.com/in/nadine-cornelio/"
+            >
+              <img src="./assets/linkedin.png" />
+            </a>
+            <a
+              class="icones"
+              href="https://app.rocketseat.com.br/me/nadine-weimann-cornelio"
+            >
+              <img src="./assets/rocketseat.png" />
+            </a>
+          </div>
+        </div>
+    </div>
+    
+    </section>
+
+<!--PROJETOS-->
+
+<section id="projetos">
+  <h2 class="projetostitulo">Meus Projetos</h2>
+  <div class="amostra">
+    <div class="projeto projeto1">projeto1</div>
+    <div class="projeto projeto2">projeto2</div>
+    <div class="projeto projeto3">projeto3</div>
+    <div class="projeto projeto4">projeto4</div>
+    <div class="projeto projeto5">projeto5</div>
+    <div class="projeto projeto6">projeto6</div>
+    <div class="projeto projeto7">projeto7</div>
+    <div class="projeto projeto8">projeto8</div>
+    <div class="projeto projeto9">projeto9</div>
+  </div>
+</section>
+
+
+<!--CONTATO-->
+
+<section id="contato">
+  <h2 class="entreemcontato">Entre em contato comigo:</h2>
+  <form action="https://formsubmit.co/ajax/nickolas@tigercodes.com.br" method="POST" data-form>
+    <div id="formulario">
+
+      <input type="text" placeholder="Nome:" name="nome" id="nome" required />
+
+      <input type="assunto" placeholder="Assunto:" name="assunto" id="assunto" required />
+
+      <textarea name="mensagem" placeholder="Mensagem:" id="mensagem" required></textarea>
+      <button class="enviar" type="submit" data-button>Enviar</button>
+    </div>
+    </form>
+</section>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+      <p>2023 - BY NADINE CORNELIO</p>
+    </footer>
+  </body>
+</html>
